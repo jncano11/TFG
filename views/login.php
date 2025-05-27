@@ -12,8 +12,8 @@ if (isset($_SESSION['usuario'])) {
   <meta charset="UTF-8">
   <title>Iniciar Sesión - JCSCORES</title>
   <link rel="icon" href="/TFG/public/img/icons/logo.png" type="image/png" />
-  <link rel="stylesheet" href="/public/css/login.css">
-</head>
+  <link rel="stylesheet" href="/TFG/public/css/login.css">
+  </head>
 <body>
   <div class="login-container">
     <h2>Iniciar Sesión</h2>
