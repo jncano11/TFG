@@ -12,7 +12,7 @@ if (isset($_SESSION['usuario'])) {
   <meta charset="UTF-8">
   <title>Iniciar Sesión - JCSCORES</title>
   <link rel="icon" href="/TFG/public/img/icons/logo.png" type="image/png" />
-  <link rel="stylesheet" href="/TFG/public/css/login.css">
+  <link rel="stylesheet" href="../TFG/public/css/login.css">
   </head>
 <body>
   <div class="login-container">
