@@ -8,7 +8,7 @@ if (!isset($_SESSION['usuario'])) {
 $nombreUsuario = $_SESSION['usuario']['nombre'];
 $rol = $_SESSION['usuario']['rol'];
 
-require_once __DIR__ . '/../models/Partido.php';
+require_once __DIR__ . '/models/Partido.php';
 
 $isAjax = isset($_GET['ajax']) && $_GET['ajax'] == 1;
 
@@ -123,7 +123,7 @@ for ($i = -3; $i <= 50; $i++) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JCSCORES - Resultados en vivo</title>
   <link rel="icon" href="/TFG/public/img/icons/logo.png" type="image/png" />
-  <link rel="stylesheet" href="../public/css/styles.css"/>
+  <link rel="stylesheet" href="/public/css/styles.css" />
   <style>
     .dias-navegacion {
       display: flex;
