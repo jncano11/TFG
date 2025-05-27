@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     if (empty($email) || empty($password)) {
-        header("Location: ../views/login.php?error=campos_vacios");
+        header("Location: /views/login.php?error=campos_vacios");
         exit;
     }
 
@@ -30,10 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'email' => $usuario['email']
             ];
 
-            header("Location: ../views/index.php");
+            header("Location: /views/index.php");
             exit;
         } else {
-            header("Location: ../views/login.php?error=credenciales");
+            header("Location: /views/login.php?error=credenciales");
             exit;
         }
 
@@ -41,6 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Error de conexión: " . $e->getMessage());
     }
 } else {
-    header("Location: ../views/login.php");
+    header("Location:/views/login.php");
     exit;
 }
