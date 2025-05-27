@@ -5,7 +5,7 @@ FROM php:8.2-apache
 RUN docker-php-ext-install pdo pdo_mysql
 
 # Copiar todo el contenido del proyecto al contenedor
-COPY . /var/www/html/
+COPY ./views /var/www/html
 
 # Cambiamos el directorio raíz para que apunte a /TFG/views
 ENV APACHE_DOCUMENT_ROOT /var/www/html/TFG/views
