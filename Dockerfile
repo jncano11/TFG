@@ -1,20 +1,19 @@
 FROM php:8.1-apache
 
-# Instala extensiones necesarias
+# Instala extensiones necesarias para MySQL
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Copia el proyecto completo
-COPY . /var/www/html/
+# Copia el contenido de la carpeta TFG dentro de la raíz del servidor
+COPY TFG /var/www/html/TFG
 
-# Establece la carpeta views como raíz del servidor
+# Cambia la raíz del servidor a /var/www/html/TFG/views
 RUN sed -i 's|/var/www/html|/var/www/html/TFG/views|g' /etc/apache2/sites-available/000-default.conf
 
-# Configura index.php como archivo por defecto
+# Asegura que Apache cargue index.php por defecto
 RUN echo "DirectoryIndex index.php index.html" > /etc/apache2/conf-available/directoryindex.conf && \
     a2enconf directoryindex
 
-# Otorga permisos al servidor para acceder a los archivos
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
+# Otorga permisos correctos
+RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
 EXPOSE 80
