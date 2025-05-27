@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf5ea;
+    padding: 20px;
+  }
+  
+  .btn-volver {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .campo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid green;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #c6f6c6;
+    position: relative;
+  }
+  
+  .equipo-local, .equipo-visitante {
+    width: 45%;
+  }
+  
+  .jugadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .jugador {
+    background-color: #fff;
+    padding: 6px 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  .linea-medio {
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(145deg, #0f2c45, #0d1b2a);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .editar-partido-container {
+    background-color: #ffffff10;
+    padding: 40px 35px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    width: 100%;
+    max-width: 480px;
+    color: #e0f7e8;
+    box-sizing: border-box;
+  }
+  
+  /* Título */
+  .editar-partido-container h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #00ff88;
+    text-align: center;
+  }
+  
+  /* Etiquetas */
+  label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #b8f1cd;
+  }
+  
+  /* Inputs tipo número y texto */
+  input[type="number"],
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e0f7e8;
+    color: #0e1a2b;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input[type="number"]:focus,
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00ff88;
+  }
+  
+  /* Botón guardar */
+  button[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px 0;
+    background-color: #00ff88;
+    border: none;
+    border-radius: 10px;
+    color: #0e1a2b;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00cc6a;
+  }
+  
+  /* Enlace volver */
+ /* Contenedor para el botón volver: posición absoluta en esquina */
+a.btn-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: #00ff88;
+    color: #0e1a2b;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 255, 136, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  a.btn-volver:hover {
+    background-color: #00cc6a;
+    color: #fff;
+  }
+  
+  /* Opcional: quitar texto, solo mostrar flecha */
+  a.btn-volver::before {
+    content: "←"; /* Flecha izquierda Unicode */
+    display: inline-block;
+  }
+  
+  
+  /* Si quieres un mensaje de confirmación o error */
+  .msg-exito {
+    background-color: #00cc6a;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .msg-error {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  

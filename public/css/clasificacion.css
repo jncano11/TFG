@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background: #0e1a2b;
+    color: #fff;
+  }
+  
+  header h1 {
+    color: #00ff88;
+  }
+  
+  .clasificacion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .clasificacion th,
+  .clasificacion td {
+    padding: 8px 12px;
+    border: 1px solid #444;
+    text-align: center;
+  }
+  
+  .clasificacion th {
+    background: #00ff88;
+    color: #0e1a2b;
+  }
+  
+  tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Colores de zonas */
+  .ascenso {
+    background-color: #006644 !important;
+  }
+  
+  .playoff {
+    background-color: #cc8800 !important;
+  }
+  
+  .descenso {
+    background-color: #8b0000 !important;
+  }
+  
+  /* Leyenda */
+  .leyenda {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .leyenda-cuadro {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+  }
+  
+  .leyenda-cuadro.ascenso {
+    background-color: #006644;
+  }
+  
+  .leyenda-cuadro.playoff {
+    background-color: #cc8800;
+  }
+  
+  .leyenda-cuadro.descenso {
+    background-color: #8b0000;
+  }
+  
+  .equipo-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .equipo-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  

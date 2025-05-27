@@ -1,0 +1,161 @@
+/* Fondo y fuente base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: 
+    linear-gradient(rgba(14, 26, 43, 0.85), rgba(24, 58, 78, 0.85)),
+    url('../../img/icons/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.admin-usuarios-container {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1100px;
+    width: 90%;
+    color: white;
+}
+
+/* Contenedor de los botones superiores */
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Botón volver (izquierda) */
+.btn-volver {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Botón administrar equipos (derecha) */
+.btn-admin-equipos {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-admin-equipos:hover {
+    background-color: #0071a4;
+}
+
+/* Título */
+.titulo {
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Tabla de usuarios */
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tabla-usuarios th {
+    background-color: #00ff8840;
+    color: white;
+}
+
+.tabla-usuarios tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Botón de eliminar */
+.btn-eliminar {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #cc0000;
+}
+
+/* Botón cambiar rol */
+.btn-cambiar-rol {
+    background-color: #ffaa00;
+    color: #0e1a2b;
+    font-weight: bold;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cambiar-rol:hover {
+    background-color: #e69500;
+}
+
+/* Estilo para el select de roles */
+select[name="rol"] {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+select[name="rol"]:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+select[name="rol"] option {
+    color: black;
+}

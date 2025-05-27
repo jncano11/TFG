@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.perfil-container {
+    background-color: rgba(14, 26, 43, 0.85);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.perfil-header {
+    margin-bottom: 25px;
+}
+
+.perfil-foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ff88;
+    background-color: #23364a;
+    box-shadow: 0 0 15px #00ff88aa;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.perfil-header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #00ff88;
+    margin: 0;
+    letter-spacing: 1.3px;
+}
+
+.perfil-datos {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.perfil-dato {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #00ff88aa;
+    padding-bottom: 6px;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+}
+
+.perfil-dato:hover {
+    background-color: #00ff8844;
+}
+
+.label {
+    font-weight: 700;
+    color: #00ff88cc;
+    margin-right: 6px;
+    user-select: none;
+}
+
+a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00cc6a;
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .perfil-container {
+    padding: 25px 20px;
+    max-width: 100%;
+    }
+
+    .perfil-header h1 {
+    font-size: 2rem;
+    }
+
+    .perfil-foto {
+    width: 130px;
+    height: 130px;
+    }
+}

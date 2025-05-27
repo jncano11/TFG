@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e1e2a;
+    color: white;
+  }
+  
+  .crear-partido-container {
+    background: linear-gradient(145deg, #0f2c45, #0d1b2a);
+    border-left: 6px solid #27f16b;
+    border-radius: 16px;
+    padding: 30px 40px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 500px; /* Más estrecho que antes */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .crear-partido-container h1 {
+    font-size: 28px;
+    color: #27f16b;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #27f16b44;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #c1d9d9;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="time"],
+  form select {
+    background-color: #142f43;
+    border: 1px solid #27f16b88;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px; /* Más espacio entre campos */
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="date"]:focus,
+  form input[type="time"]:focus,
+  form select:focus {
+    border-color: #27f16b;
+  }
+  
+  button[type="submit"] {
+    background-color: #27f16b;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    width: auto; /* No ocupa todo el ancho */
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1cb85a;
+    color: white;
+}
+
+  /* Animación de aparición suave */
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.btn-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27f16b;
+    color: #0d1b2a;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(39, 241, 107, 0.5);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+}
+
+.btn-volver:hover {
+    background-color: #1cb85a;
+    color: #e0ffe0;
+    box-shadow: 0 6px 14px rgba(39, 241, 107, 0.8);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  form select, form input[type="text"], form input[type="date"], form input[type="time"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    background-color: #122f4f;
+    color: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #27f16b;
+    border: none;
+    border-radius: 8px;
+    color: #0d1b2a;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #1cb85a;
+  }

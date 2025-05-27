@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background:
+      linear-gradient(rgba(14, 26, 43, 0.85), rgba(24, 58, 78, 0.85));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Header */
+  header .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo .verde {
+    color: #00ff88;
+  }
+  
+  nav a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #00cc6a;
+  }
+  
+  /* Main */
+  .detalle-partido {
+    background-color: #ffffff10;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 800px;
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  .detalle-partido h1 {
+    font-size: 28px;
+    color: #00ff88;
+    margin-bottom: 30px;
+  }
+  
+  .escudos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .escudos .equipo {
+    text-align: center;
+  }
+  
+  .escudos img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: #ffffff20;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .escudos img:hover {
+    transform: scale(1.05);
+  }
+  
+  .escudos span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .escudos .nombre {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  
+  .escudos .resultado {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00ff88;
+    background-color: #ffffff1a;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-inline: auto;
+    width: fit-content;
+  }
+  
+  
+  .vs {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff88;
+    margin: 0 20px;
+  }
+  
+  .info-partido {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  .info-partido p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ddd;
+  }
+  
+  .info-partido p strong {
+    color: #00ff88;
+  }
+
+  
+  @media (max-width: 650px) {
+    .escudos {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .vs {
+      margin: 20px 0;
+    }
+  
+    .detalle-partido {
+      padding: 25px 15px;
+      margin: 20px 10px;
+    }
+  }
+  
+  .botones-partido .btn {
+    background-color: #00ff88;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0e1a2b;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .botones-partido .btn:hover {
+    background-color: #00cc6a;
+  }
+
+  strong.propia {
+    color: red;
+  }
+  
+  
