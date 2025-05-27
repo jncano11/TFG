@@ -63,14 +63,14 @@ if ($isAjax) {
         <div class="partido categoria-<?= $categoria ?>">
           <div class="equipos">
             <div class="equipo local">
-              <a href="	/TFG/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_local_id']) ?>">
+              <a href="	/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_local_id']) ?>">
                 <img src="/TFG/public/<?= htmlspecialchars($partido['equipo_local_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_local']) ?>" />
                 <span><?= htmlspecialchars($partido['equipo_local']) ?></span>
               </a>
             </div>
             <div class="vs">vs</div>
             <div class="equipo visitante">
-              <a href="/TFG/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_visitante_id']) ?>">
+              <a href="/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_visitante_id']) ?>">
                 <img src="/TFG/public/<?= htmlspecialchars($partido['equipo_visitante_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_visitante']) ?>" />
                 <span><?= htmlspecialchars($partido['equipo_visitante']) ?></span>
               </a>
@@ -85,15 +85,15 @@ if ($isAjax) {
 
           <?php if ($rol === 'Entrenador'): ?>
             <div class="boton-editar-partido">
-              <a href="/TFG/views/editar_partido.php?id=<?= urlencode($partido['id']) ?>" class="btn-editar">Editar Partido</a>
+              <a href="/views/editar_partido.php?id=<?= urlencode($partido['id']) ?>" class="btn-editar">Editar Partido</a>
             </div>
             <div class="botones-entrenador">
               <?php if ($partidoEsFuturo): ?>
-                <a href="/TFG/views/añadir_alineaciones.php?partido_id=<?= urlencode($partido['id']) ?>&equipo_local_id=<?= urlencode($partido['equipo_local_id']) ?>&equipo_visitante_id=<?= urlencode($partido['equipo_visitante_id']) ?>" class="btn-alineacion">
+                <a href="/views/añadir_alineaciones.php?partido_id=<?= urlencode($partido['id']) ?>&equipo_local_id=<?= urlencode($partido['equipo_local_id']) ?>&equipo_visitante_id=<?= urlencode($partido['equipo_visitante_id']) ?>" class="btn-alineacion">
                   Añadir Alineación
                 </a>
               <?php endif; ?>
-              <a href="/TFG/views/asignar_eventos.php?id=<?= urlencode($partido['id']) ?>" class="btn-detalles">Añadir Detalles</a>
+              <a href="/views/asignar_eventos.php?id=<?= urlencode($partido['id']) ?>" class="btn-detalles">Añadir Detalles</a>
             </div>
           <?php endif; ?>
         </div>
@@ -219,9 +219,9 @@ for ($i = -3; $i <= 50; $i++) {
   <div class="admin-panel">
     <h2>Panel de administrador</h2>
     <div class="admin-options">
-      <a href="/TFG/views/crear_partido.php">Gestionar partidos</a>
-      <a href="/TFG/views/crear_equipo.php">Crear equipo</a>
-      <a href="/TFG/views/administrar_usuarios.php">Usuarios registrados</a>
+      <a href="/views/crear_partido.php">Gestionar partidos</a>
+      <a href="/views/crear_equipo.php">Crear equipo</a>
+      <a href="/views/administrar_usuarios.php">Usuarios registrados</a>
     </div>
   </div>
   <?php endif; ?>
@@ -230,8 +230,8 @@ for ($i = -3; $i <= 50; $i++) {
   <div class="entrenador-panel">
     <h2>Panel de entrenador</h2>
     <div class="entrenador-options">
-      <a href="/TFG/views/crear_equipo.php">Crear equipo</a>
-      <a href="/TFG/views/ver_plantilla.php">Ver plantilla</a>
+      <a href="/views/crear_equipo.php">Crear equipo</a>
+      <a href="/views/ver_plantilla.php">Ver plantilla</a>
     </div>
   </div>
   <?php endif; ?>
@@ -243,10 +243,10 @@ for ($i = -3; $i <= 50; $i++) {
   <?php endif; ?>
 
   <div class="menu-secundario">
-    <a href="/TFG/views/clasificacionRP.php">REGIONAL PREFERENTE</a>
-    <a href="/TFG/views/clasificacion.php">1ª REGIONAL</a>
-    <a href="/TFG/views/clasificacion2R.php">2ª REGIONAL</a>
-    <a href="/TFG/views/clasificacionM.php">MUNDIAL CLUBES</a>
+    <a href="/views/clasificacionRP.php">REGIONAL PREFERENTE</a>
+    <a href="/views/clasificacion.php">1ª REGIONAL</a>
+    <a href="/views/clasificacion2R.php">2ª REGIONAL</a>
+    <a href="/views/clasificacionM.php">MUNDIAL CLUBES</a>
   </div>
 
   <!-- Navegación de días con flechas -->
@@ -314,7 +314,7 @@ for ($i = -3; $i <= 50; $i++) {
       const partidoDiv = e.target.closest('.partido-link');
       if (partidoDiv && !e.target.closest('a')) {
         const partidoId = partidoDiv.dataset.id;
-        window.location.href = `/TFG/views/partido_detalle.php?id=${partidoId}`;
+        window.location.href = `/views/partido_detalle.php?id=${partidoId}`;
       }
     });
 
