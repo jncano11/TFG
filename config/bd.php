@@ -1,8 +1,8 @@
 <?php
-$host = 'mysql-db';
-$db   = 'futbol_tfg';
-$user = 'root';
-$pass = 'admin';
+$host = 'sql7.freesqldatabase.com';
+$db   = 'sql7781605';
+$user = 'sql7781605';
+$pass = 'gjM8I3Ssxd';
 
 if (!function_exists('conectarBD')) {
     function conectarBD() {
