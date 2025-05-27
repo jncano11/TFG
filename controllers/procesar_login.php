@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'email' => $usuario['email']
             ];
 
-            header("Location: /views/index.php");
+            header("Location: /index.php");
             exit;
         } else {
             header("Location: /views/login.php?error=credenciales");
