@@ -2,7 +2,7 @@
 session_start();
 date_default_timezone_set('Europe/Madrid');
 if (!isset($_SESSION['usuario'])) {
-    header("Location: login.php");
+    header("Location: /views/login.php");
     exit();
 }
 $nombreUsuario = $_SESSION['usuario']['nombre'];
