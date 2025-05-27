@@ -1,24 +1,18 @@
 FROM php:8.1-apache
 
-# Instalar extensiones necesarias
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Activar mod_rewrite por si usas .htaccess
-RUN a2enmod rewrite
+# Copiar todo dentro del contenedor
+COPY . /var/www/html
 
-# Copiar todo el contenido del proyecto TFG (incluyendo views, public, etc.)
-COPY . /var/www/html/TFG
-
-# Cambiar el DocumentRoot a la carpeta de views
-RUN sed -i 's|DocumentRoot /var/www/html.*|DocumentRoot /var/www/html|' /etc/apache2/sites-available/000-default.conf
-
-
-# Asegura index.php como archivo por defecto
+# Asegurar que Apache use index.php o index.html
 RUN echo "DirectoryIndex index.php index.html" > /etc/apache2/conf-available/directoryindex.conf && \
     a2enconf directoryindex
 
-# Dar permisos adecuados
+# Habilitar mod_rewrite si usas rutas limpias
+RUN a2enmod rewrite
+
+# Dar permisos correctos
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
-# Exponer el puerto 80
 EXPOSE 80
