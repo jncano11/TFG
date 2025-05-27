@@ -10,7 +10,8 @@ RUN a2enmod rewrite
 COPY . /var/www/html/TFG
 
 # Cambiar el DocumentRoot a la carpeta de views
-RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/TFG/views|' /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's|DocumentRoot /var/www/html.*|DocumentRoot /var/www/html|' /etc/apache2/sites-available/000-default.conf
+
 
 # Asegura index.php como archivo por defecto
 RUN echo "DirectoryIndex index.php index.html" > /etc/apache2/conf-available/directoryindex.conf && \
