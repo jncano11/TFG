@@ -29,7 +29,7 @@ $equipos = $equipoModel->obtenerTodos();
                 <?php foreach ($equipos as $equipo): ?>
                     <tr>
                         <td><?= htmlspecialchars($equipo['nombre']) ?></td>
-                        <td><img src="/TFG/public/<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo" width="40"></td>
+                        <td><img src="/public/<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo" width="40"></td>
                         <td>
                             <a class="btn btn-eliminar" href="../controllers/eliminar_equipo.php?id=<?= $equipo['id'] ?>" onclick="return confirm('¿Eliminar equipo?')">Eliminar</a>
                         </td>
