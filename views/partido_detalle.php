@@ -100,7 +100,7 @@ usort($eventos, fn($a, $b) => $a['minuto'] <=> $b['minuto']);
   <div class="contenedor">
     <div class="logo">JC<span class="verde">SCORES</span></div>
     <nav>
-      <a href="index.php">Volver</a>
+      <a href="/index.php">Volver</a>
     </nav>
   </div>
 </header>
