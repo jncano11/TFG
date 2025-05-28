@@ -72,7 +72,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
             <form action="../controllers/CambiarEquipacion.php" method="post" enctype="multipart/form-data" class="form-cambiar-equipacion">
                 <input type="hidden" name="equipo_id" value="<?= $equipo['id'] ?>">
                 <label class="btn-cambiar-equipacion">
-                    <img class="equipacion" src="/TFG/public/img/uploads<?= htmlspecialchars($equipo['equipacion'] ?? 'img/default_kit.png') ?>" alt="Equipación del equipo">
+                    <img class="equipacion" src="/public/<?= htmlspecialchars($equipo['equipacion'] ?? 'img/default_kit.png') ?>" alt="Equipación del equipo">
                     <input type="file" name="equipacion" accept="image/*" onchange="this.form.submit()" hidden>
                     <span class="overlay">Cambiar equipación</span>
                 </label>
