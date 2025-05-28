@@ -38,6 +38,6 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario']['rol'] !== 'Entrenador'
 </form>
 
 
-    <a href="index.php" class="volver-inicio">← Volver al inicio</a>
+    <a href="/index.php" class="volver-inicio">← Volver al inicio</a>
 </body>
 </html>
