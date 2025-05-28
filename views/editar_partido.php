@@ -41,7 +41,7 @@ $partido = Partido::obtenerPorId($id);
 <body>
 
 <div class="editar-partido-container">
-<a href="index.php" class="btn-volver" title="Volver"></a>
+<a href="/index.php" class="btn-volver" title="Volver"></a>
     <h1>Editar Partido</h1>
     <?php if (isset($_GET['msg']) && $_GET['msg'] === 'guardado'): ?>
         <p class="mensaje-exito">Cambios guardados correctamente.</p>
