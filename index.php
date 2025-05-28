@@ -64,7 +64,7 @@ if ($isAjax) {
           <div class="equipos">
             <div class="equipo local">
               <a href="	/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_local_id']) ?>">
-              <img src="/uploads<?= htmlspecialchars($partido['equipo_local_escudo'] ?? 'default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_local']) ?>" />
+              <img src="/public/img/uploads/<?= htmlspecialchars($partido['equipo_local_escudo'] ?? 'default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_local']) ?>" />
               <span><?= htmlspecialchars($partido['equipo_local']) ?></span>
               </a>
             </div>
