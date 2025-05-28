@@ -220,7 +220,6 @@ for ($i = -3; $i <= 50; $i++) {
     <h2>Panel de administrador</h2>
     <div class="admin-options">
       <a href="/views/crear_partido.php">Gestionar partidos</a>
-      <a href="/views/crear_equipo.php">Crear equipo</a>
       <a href="/views/administrar_usuarios.php">Usuarios registrados</a>
     </div>
   </div>
