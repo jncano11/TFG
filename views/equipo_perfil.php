@@ -65,7 +65,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
                 </label>
             </form>
         <?php else: ?>
-            <img class="escudo" src="/TFG/public/<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo del equipo">
+            <img class="escudo" src="/public/<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo del equipo">
         <?php endif; ?>
 
         <?php if ($rolActual === 'Admin' || ($rolActual === 'Entrenador' && $miEquipoId == $equipoId)): ?>
@@ -78,7 +78,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
                 </label>
             </form>
         <?php else: ?>
-            <img class="equipacion" src="/TFG/public/<?= htmlspecialchars($equipo['equipacion'] ?? 'img/default_kit.png') ?>" alt="Equipación del equipo">
+            <img class="equipacion" src="/public/<?= htmlspecialchars($equipo['equipacion'] ?? 'img/default_kit.png') ?>" alt="Equipación del equipo">
         <?php endif; ?>
     </div>
 
