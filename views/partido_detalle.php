@@ -109,13 +109,13 @@ usort($eventos, fn($a, $b) => $a['minuto'] <=> $b['minuto']);
   <h1><?= htmlspecialchars($partido['equipo_local']) ?> vs <?= htmlspecialchars($partido['equipo_visitante']) ?></h1>
   <div class="escudos">
     <div class="equipo">
-      <img src="/TFG/public/<?= htmlspecialchars($partido['equipo_local_escudo']) ?>" alt="Escudo local">
+      <img src="/public/<?= htmlspecialchars($partido['equipo_local_escudo']) ?>" alt="Escudo local">
       <span class="nombre"><?= htmlspecialchars($partido['equipo_local']) ?></span>
       <span class="resultado"><?= $partido['resultado_local'] ?? '-' ?></span>
     </div>
     <div class="vs">VS</div>
     <div class="equipo">
-      <img src="/TFG/public/<?= htmlspecialchars($partido['equipo_visitante_escudo']) ?>" alt="Escudo visitante">
+      <img src="/public/<?= htmlspecialchars($partido['equipo_visitante_escudo']) ?>" alt="Escudo visitante">
       <span class="nombre"><?= htmlspecialchars($partido['equipo_visitante']) ?></span>
       <span class="resultado"><?= $partido['resultado_visitante'] ?? '-' ?></span>
     </div>
