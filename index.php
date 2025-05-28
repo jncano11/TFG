@@ -122,7 +122,7 @@ for ($i = -3; $i <= 50; $i++) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JCSCORES - Resultados en vivo</title>
-  <link rel="icon" href="/TFG/public/img/icons/logo.png" type="image/png" />
+  <link rel="icon" href="/public/img/icons/logo.png" type="image/png" />
   <link rel="stylesheet" href="/public/css/styles.css" />
   <style>
     .dias-navegacion {
@@ -210,7 +210,7 @@ for ($i = -3; $i <= 50; $i++) {
     <div class="logo">JC<span class="verde">SCORES</span></div>
     <nav>
       <a href="/views/perfil.php">Ver Perfil</a>
-      <a id="btnGenerarPDF" href="#" target="_blank" class="btn-pdf">Generar PDF</a>
+      <a id="btnGenerarPDF" href="/controllers/generar_pdf.php" target="_blank" class="btn-pdf">Generar PDF</a>
       <a href="/views/logout.php">Cerrar sesión (<?= htmlspecialchars($nombreUsuario) ?>)</a>
     </nav>
   </header>
