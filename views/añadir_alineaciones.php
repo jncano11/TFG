@@ -87,7 +87,7 @@ $formaciones = ['4-4-2', '4-3-3', '3-5-2', '5-3-2', '3-4-3', '4-2-3-1'];
 </form>
 
 
-    <a href="index.php" class="volver-btn">Volver al inicio</a>
+    <a href="/index.php" class="volver-btn">Volver al inicio</a>
 </div>
 </body>
 </html>
