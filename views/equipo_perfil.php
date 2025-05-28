@@ -37,7 +37,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
     <meta charset="UTF-8">
     <title>Perfil del Equipo - <?= htmlspecialchars($equipo['nombre']) ?></title>
     <link rel="icon" href="/TFG/public/img/icons/logo.png" type="image/png" />
-    <link rel="stylesheet" href="/TFG/public/css/equipo_perfil.css">
+    <link rel="stylesheet" href="/public/css/equipo_perfil.css">
     <style>
       .ultimos-resultados { text-align:center; margin: 20px 0; }
       .resultados-icons { display:flex; justify-content:center; gap:8px; }
