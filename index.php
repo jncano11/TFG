@@ -64,14 +64,14 @@ if ($isAjax) {
           <div class="equipos">
             <div class="equipo local">
               <a href="	/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_local_id']) ?>">
-                <img src="/img/uploads<?= htmlspecialchars($partido['equipo_local_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_local']) ?>" />
+                <img src="/TFG/public/uploads<?= htmlspecialchars($partido['equipo_local_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_local']) ?>" />
                 <span><?= htmlspecialchars($partido['equipo_local']) ?></span>
               </a>
             </div>
             <div class="vs">vs</div>
             <div class="equipo visitante">
               <a href="/views/equipo_perfil.php?id=<?= urlencode($partido['equipo_visitante_id']) ?>">
-                <img src="/img/uploads/<?= htmlspecialchars($partido['equipo_visitante_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_visitante']) ?>" />
+                <img src="/TFG/public/uploads<?= htmlspecialchars($partido['equipo_visitante_escudo'] ?? 'uploads/default.png') ?>" alt="Escudo <?= htmlspecialchars($partido['equipo_visitante']) ?>" />
                 <span><?= htmlspecialchars($partido['equipo_visitante']) ?></span>
               </a>
             </div>
