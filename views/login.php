@@ -34,7 +34,6 @@ if (isset($_SESSION['usuario'])) {
 
     <div class="extras">
       <p><a href="register.php" class="registro-btn">¿No tienes cuenta? Regístrate</a></p>
-      <p><a href="#" class="olvide">¿Has olvidado tu contraseña?</a></p>
     </div>
   </div>
 </body>
