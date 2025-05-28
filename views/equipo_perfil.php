@@ -59,7 +59,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
             <form action="../controllers/CambiarEscudo.php" method="post" enctype="multipart/form-data" class="form-cambiar-escudo">
                 <input type="hidden" name="equipo_id" value="<?= $equipo['id'] ?>">
                 <label class="btn-cambiar-escudo">
-                    <img class="escudo" src="/TFG/public/img/uploads8<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo del equipo">
+                    <img class="escudo" src="/public/<?= htmlspecialchars($equipo['escudo']) ?>" alt="Escudo del equipo">
                     <input type="file" name="escudo" accept="image/*" onchange="this.form.submit()" hidden>
                     <span class="overlay">Cambiar escudo</span>
                 </label>
