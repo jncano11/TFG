@@ -82,7 +82,7 @@ $jugadores = Usuario::obtenerJugadoresPorPartido($partido_id);
             <button type="submit">Guardar Evento</button>
         </form>
         <div class="volver">
-            <a href="index.php">← Volver al inicio</a>
+            <a href="/index.php">← Volver al inicio</a>
         </div>
     </div>
     <script>

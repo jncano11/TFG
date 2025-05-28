@@ -5,10 +5,6 @@ require_once 'models/Usuario.php';
 class PerfilController {
     public function verPerfil() {
         session_start();
-
-        // Para depuración inicial (puedes descomentar esto si lo necesitas)
-        // echo "<pre>"; var_dump($_SESSION); echo "</pre>"; exit;
-
         // Verificamos que el usuario está logueado y tiene email en sesión
         if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['email'])) {
             header("Location: login.php");

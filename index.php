@@ -21,7 +21,7 @@ if ($isAjax) {
   <style>
     .partido.categoria-regional-preferente {
   background-color:rgb(18, 17, 51);
-  border-left: 5px solid #38ff94; /* verde neón */
+  border-left: 5px solid #38ff94;
 }
 
 .partido.categoria-1ª-regional {
@@ -230,7 +230,6 @@ for ($i = -3; $i <= 50; $i++) {
     <h2>Panel de entrenador</h2>
     <div class="entrenador-options">
       <a href="/views/crear_equipo.php">Crear equipo</a>
-      <a href="/views/ver_plantilla.php">Ver plantilla</a>
     </div>
   </div>
   <?php endif; ?>
