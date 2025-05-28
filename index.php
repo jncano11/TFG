@@ -328,7 +328,7 @@ for ($i = -3; $i <= 50; $i++) {
     }
 
     const fecha = getFechaSeleccionada();
-    btnPDF.href = `/TFG/controllers/generar_pdf.php?fecha=${encodeURIComponent(fecha)}`;
+    btnPDF.href = `/controllers/generar_pdf.php?fecha=${encodeURIComponent(fecha)}`;
     });
   </script>
 
