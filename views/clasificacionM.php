@@ -101,7 +101,7 @@ usort($tabla, function($a, $b){
 <body>
   <header>
     <h1>Clasificación Mundial de Clubes</h1>
-    <a href="index.php" style="color:#00ff88">← Volver</a>
+    <a href="/index.php" style="color:#00ff88">← Volver</a>
   </header>
   <main>
     <table class="clasificacion">

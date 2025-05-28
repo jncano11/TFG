@@ -209,7 +209,7 @@ for ($i = -3; $i <= 50; $i++) {
   <header>
     <div class="logo">JC<span class="verde">SCORES</span></div>
     <nav>
-      <a href="/TFG/views/perfil.php">Ver Perfil</a>
+      <a href="/views/perfil.php">Ver Perfil</a>
       <a id="btnGenerarPDF" href="#" target="_blank" class="btn-pdf">Generar PDF</a>
       <a href="/views/logout.php">Cerrar sesión (<?= htmlspecialchars($nombreUsuario) ?>)</a>
     </nav>

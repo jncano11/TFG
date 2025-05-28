@@ -17,7 +17,7 @@ $usuarios = $usuario->obtenerTodos();
 <body>
 <main class="admin-usuarios-container">
     <div class="top-buttons">
-        <a href="../views/index.php" class="btn-volver" title="Volver al inicio">⟵</a>
+        <a href="/index.php" class="btn-volver" title="Volver al inicio">⟵</a>
         <a href="administrar_equipos.php" class="btn-admin-equipos" title="Administrar equipos">Administrar equipos</a>
     </div>
     <h1 class="titulo">Administrar Usuarios</h1>
