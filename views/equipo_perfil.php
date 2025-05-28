@@ -121,7 +121,7 @@ $entrenador = $usuarioModel->obtenerPorId($equipo['entrenador_id']);
         <?php if ($jugadores): ?>
             <?php foreach ($jugadores as $jugador): ?>
             <div class="jugador">
-                <img src="/TFG/public/img/icons/perfil.jpg" alt="Perfil" class="perfil-foto">
+                <img src="/public/img/icons/perfil.jpg" alt="Perfil" class="perfil-foto">
                 <div>
                     <strong><?= htmlspecialchars($jugador['nombre']) ?> <?= htmlspecialchars($jugador['apellidos']) ?></strong><br>
                     Posición: <?= htmlspecialchars($jugador['posicion']) ?>

@@ -25,7 +25,7 @@ $categorias = ['Regional Preferente', '1ªRegional', '2ªRegional', '3ªRegional
 </head>
 <body>
 
-<a href="../views/index.php" class="btn-volver" title="Volver al inicio">&#8592;</a>
+<a href="/index.php" class="btn-volver" title="Volver al inicio">&#8592;</a>
 
 <div class="crear-partido-container">
     <h1>Crear nuevo partido</h1>

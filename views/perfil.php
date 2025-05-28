@@ -37,7 +37,7 @@ try {
 <body>
     <div class="perfil-container">
         <div class="perfil-header">
-            <img src="/TFG/public/img/icons/perfil.jpg" alt="Foto de perfil por defecto" class="perfil-foto">
+            <img src="/public/img/icons/perfil.jpg" alt="Foto de perfil por defecto" class="perfil-foto">
             <h1><?= htmlspecialchars($datosUsuario['nombre'] . ' ' . $datosUsuario['apellidos']) ?></h1>
         </div>
 
