@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ];
 
         if (Partido::crear($datos)) {
-            header("Location: /TFG/views/index.php");
+            header("Location: /index.php");
             exit();
         } else {
             echo "Error al crear partido.";

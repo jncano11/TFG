@@ -51,11 +51,10 @@ try {
 
             <div class="perfil-dato"><span class="label">Equipo ID:</span> <?= (int)$datosUsuario['equipo_id'] ?></div>
             <div class="perfil-dato"><span class="label">Rol:</span> <?= htmlspecialchars($datosUsuario['rol']) ?></div>
-            <div class="perfil-dato"><span class="label">Creado en:</span> <?= date('d/m/Y H:i', strtotime($datosUsuario['creado_en'])) ?></div>
             <div class="perfil-dato"><span class="label">Última actualización:</span> <?= date('d/m/Y H:i', strtotime($datosUsuario['actualizado_en'])) ?></div>
         </div>
 
-        <p><a href="/TFG/views/index.php">← Volver al menú</a></p>
+        <p><a href="/index.php">← Volver al menú</a></p>
     </div>
 </body>
 </html>
