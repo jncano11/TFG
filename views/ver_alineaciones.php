@@ -69,8 +69,8 @@ function jugadoresArray($cadena) {
 
     <div class="campo-futbol">
         <!-- Escudos y nombres dentro del campo, en esquinas y abajo de los escudos -->
-        <img class="escudo-local-campo" src="/TFG/public/<?= htmlspecialchars($equipoLocal['escudo']) ?>" alt="Escudo Local">
-        <img class="escudo-visitante-campo" src="/TFG/public/<?= htmlspecialchars($equipoVisitante['escudo']) ?>" alt="Escudo Visitante">
+        <img class="escudo-local-campo" src="/public/<?= htmlspecialchars($equipoLocal['escudo']) ?>" alt="Escudo Local">
+        <img class="escudo-visitante-campo" src="/public/<?= htmlspecialchars($equipoVisitante['escudo']) ?>" alt="Escudo Visitante">
 
         <div class="nombre-local-campo"><?= htmlspecialchars($partido['equipo_local']) ?></div>
         <div class="nombre-visitante-campo"><?= htmlspecialchars($partido['equipo_visitante']) ?></div>
