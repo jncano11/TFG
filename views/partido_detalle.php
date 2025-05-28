@@ -159,7 +159,7 @@ usort($eventos, fn($a, $b) => $a['minuto'] <=> $b['minuto']);
               }
             ?>
             <div class="evento" <?= $evento['tipo_evento'] === 'tarjeta' ? 'title="' . htmlspecialchars($evento['motivo']) . '"' : '' ?>>
-            <img src="/TFG/public/img/icons/<?= $icono ?>" class="icono-evento">
+            <img src="/public/img/icons/<?= $icono ?>" class="icono-evento">
             <?php
               $esPropia = ($evento['tipo_evento'] === 'gol') && in_array($tipo, ['propia puerta']);
               $claseJugador = $esPropia ? 'propia' : '';
@@ -194,7 +194,7 @@ usort($eventos, fn($a, $b) => $a['minuto'] <=> $b['minuto']);
               }
             ?>
             <div class="evento" <?= $evento['tipo_evento'] === 'tarjeta' ? 'title="' . htmlspecialchars($evento['motivo']) . '"' : '' ?>>
-              <img src="/TFG/public/img/icons/<?= $icono ?>" class="icono-evento">
+              <img src="/public/img/icons/<?= $icono ?>" class="icono-evento">
             <?php
               $esPropia = ($evento['tipo_evento'] === 'gol') && in_array($tipo, ['propia puerta']);
               $claseJugador = $esPropia ? 'propia' : '';
