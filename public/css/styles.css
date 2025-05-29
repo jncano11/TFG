@@ -658,3 +658,84 @@ a.btn-volver::before {
 .btn-pdf:hover {
   background-color: #45a049;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .menu-secundario {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ligas {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .contenido {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .equipos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .equipo span {
+    font-size: 18px;
+  }
+
+  .partido {
+    padding: 15px;
+  }
+
+  .info-partido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-options,
+  .entrenador-options {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-panel,
+  .entrenador-panel {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .bienvenida-text {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .dias-deslizables {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .dia-boton {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
