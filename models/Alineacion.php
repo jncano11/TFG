@@ -4,12 +4,10 @@ require_once __DIR__ . '/../config/bd.php';
 class Alineacion
 {
     private $db;
-
     public function __construct()
     {
         $this->db = conectarBD();
     }
-
     public function guardar($partido_id, $equipo_id, $tipo, $formacion, $alineacion_texto)
     {
         if ($tipo === 'local') {
@@ -27,7 +25,6 @@ class Alineacion
         $stmt->bindParam(':formacion', $formacion, PDO::PARAM_STR);
         $stmt->bindParam(':alineacion', $alineacion_texto, PDO::PARAM_STR);
         $stmt->bindParam(':partido_id', $partido_id, PDO::PARAM_INT);
-
         return $stmt->execute();
     }
 
@@ -57,9 +54,7 @@ public function obtenerPorPartido($partido_id)
             FROM alineaciones a
             JOIN equipos e_local ON a.equipo_local_id = e_local.id
             WHERE a.partido_id = :partido_id
-
             UNION
-
             SELECT 
                 a.formacion_visitante AS formacion,
                 a.alineacion_visitante AS jugadores,
@@ -68,7 +63,6 @@ public function obtenerPorPartido($partido_id)
             FROM alineaciones a
             JOIN equipos e_visitante ON a.equipo_visitante_id = e_visitante.id
             WHERE a.partido_id = :partido_id";
-
     $stmt = $this->db->prepare($sql);
     $stmt->bindParam(':partido_id', $partido_id, PDO::PARAM_INT);
     $stmt->execute();

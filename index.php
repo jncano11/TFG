@@ -103,9 +103,6 @@ if ($isAjax) {
   exit;
 }
 
-// Código normal (carga toda la página)
-
-// Construir lista de días: 3 antes y 50 después
 $dias = [];
 for ($i = -3; $i <= 50; $i++) {
     $fecha = strtotime("$i days");
