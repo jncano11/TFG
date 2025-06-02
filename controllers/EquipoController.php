@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($nombre && $escudo && $equipacion && $estadio) {
         if (Equipo::crear($nombre, $escudo, $equipacion, $entrenador_id, $estadio)) {
-            header('Location: ../views/index.php?success=1');
+            header('Location:index.php');
             exit();
         } else {
             $error = "Error al crear el equipo.";
