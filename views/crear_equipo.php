@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario']['rol'] !== 'Entrenador'
         <p class="error-message"><?= htmlspecialchars($error) ?></p>
     <?php endif; ?>
 
-    <form action="../controllers/crear_equipo.php" method="POST" enctype="multipart/form-data">
+    <form action="/controllers/EquipoController.php" method="POST" enctype="multipart/form-data">
     <label for="nombre">Nombre del equipo:</label>
     <input type="text" name="nombre" required>
 
