@@ -14,7 +14,7 @@ $equipos = $equipoModel->obtenerTodos();
 </head>
 <body>
     <main class="admin-usuarios-container">
-        <a href="index.php" class="btn-volver" title="Volver al inicio">⟵</a>
+        <a href="../index.php" class="btn-volver" title="Volver al inicio">⟵</a>
         <h1 class="titulo">Administrar Equipos</h1>
 
         <table class="tabla-usuarios">
