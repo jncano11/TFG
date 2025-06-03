@@ -1,8 +1,8 @@
 <?php
 $host = 'sql7.freesqldatabase.com';
-$db   = 'sql7781605';
-$user = 'sql7781605';
-$pass = 'gjM8I3Ssxd';
+$db   = 'sql7782885';
+$user = 'sql7782885';
+$pass = 'pFhsWrxT6q';
 
 if (!function_exists('conectarBD')) {
     function conectarBD() {

@@ -3,12 +3,10 @@ require_once __DIR__ . '/../config/bd.php';
 
 class Equipo {
     private $db;
-
     public function __construct()
     {
         $this->db = conectarBD();
     }
-
     // Crear un nuevo equipo con equipación y estadio
     public static function crear($nombre, $escudo, $equipacion, $entrenador_id, $estadio) {
         $db = conectarBD();
@@ -22,7 +20,6 @@ class Equipo {
         $stmt->bindParam(':estadio', $estadio);
         return $stmt->execute();
     }
-
 
     // Obtener un equipo por ID (incluye estadio, escudo y equipación)
     public function obtenerPorId($id) {
